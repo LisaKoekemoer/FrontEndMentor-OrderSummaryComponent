@@ -1,38 +1,134 @@
-.App {
+body {
+  background-color: #F2F2F2;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.bg {
+  position: relative;
+}
+
+
+.card-component {
+  position: absolute;
+  top: 180px;
+  left: 450px;
+  width: 450px;
+  height: 697px;
+  border-radius: 25px;
+  margin: auto;
+  background-color: #FFFFFF;
+}
+
+.card-component img {
+  width: 450px;
+  height: 220px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card-component h1, p {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-component h1 {
+  font-size: 28px;
+  font-weight: 900;
+  color: #1F2E55;
+  margin-top: 25px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card-component p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #717FA6;
+  margin-left: 48px;
+  margin-right: 48px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.pricing {
+  display: flex;
+  align-items: center;
+  width: 345px;
+  height: 98px;
+  background-color: #F7F9FF;
+  margin: auto;
+}
+
+.pricing img {
+  width: 48px;
+  height: 48px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.price-plan {
+  width: 92px;
+  height: 48px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.price-plan h5 {
+  margin-bottom: -10px;
+  font-size: 15px;
+  color: #1F2E55;
+  font-weight: 900;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price-plan p {
+  font-size: 15px;
+  color: #717FA6;
+  font-weight: 500;
 }
+
+.change-button {
+  border: none;
+  background-color: transparent;
+  font-size: 13px;
+  font-weight: bold;
+  color: #382AE1;
+  text-decoration: underline;
+  margin-left: 100px;
+}
+
+.change-button:hover {
+  color: #766CF1;
+  cursor: pointer;
+}
+
+.payment {
+  display: block;
+  width: 354px;
+  height: 50px;
+  background-color: #382AE1;
+  border: none;
+  border-radius: 15px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.payment:hover {
+  background-color: #766CF1;
+  cursor: pointer;
+}
+
+.cancel {
+display: block;
+border: none;
+background-color: transparent;
+font-size: 15px;
+font-weight: 900;
+color: #717FA6;
+margin: auto;
+}
+
+.cancel:hover {
+  color: #1F2E55;
+  cursor: pointer;
+}
+
